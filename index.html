@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGO!!!!! 五十音学习</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="home-screen" class="screen active">
+            <div class="home-content">
+                <header class="main-header">
+                    <h1>MyGO!!!!!</h1>
+                    <div class="subtitle-with-note">
+                    <h2 class="main-subtitle">五十音</h2>
+                    <div class="note-right">feet.<br><span class="ave-mujica">Ave Mujica</span></div>
+                    </div>
+                </header>
+
+    <div class="audio-warning">
+        <div class="audio-warning-title">音量提醒 </div>
+            <div class="audio-warning-text">
+                    本网页含音频<br>
+                    请注意周围环境及设备音量
+            </div>
+    </div>
+
+             </div>
+                <div class="button-container">
+                    <button id="start-game-btn" class="btn btn-primary">开始游戏</button>
+                    <button id="author-info-btn" class="btn btn-secondary">作者信息</button>
+                </div>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-progress">
+                <span id="progress-text"></span>
+            </div>
+            <div class="question-container">
+                <p id="kana-char" class="kana-char"></p>
+            </div>
+            <div id="options-container" class="options-grid">
+                </div>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h3 id="result-status"></h3>
+            <div class="result-content">
+                <div id="result-image" class="result-image-placeholder">
+                    </div>
+                <div class="sentence-container">
+                    <p id="example-sentence" class="japanese-sentence"></p>
+                    <p id="chinese-translation" class="chinese-translation"></p>
+                    <p id="speaker-name" class="speaker-name"></p>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="next-question-btn" class="btn btn-primary">下一题</button>
+                <button id="back-to-home-btn-result" class="btn btn-secondary">回首页</button>
+            </div>
+            <audio id="sentence-audio"></audio>
+        </div>
+
+        <div id="score-screen" class="screen">
+            <h2 class="score-title">游戏结束</h2>
+            <p id="final-score" class="final-score-text"></p>
+            <div class="button-container">
+                <button id="play-again-btn" class="btn btn-primary">再玩一次</button>
+                <button id="back-to-home-btn-score" class="btn btn-secondary">回首页</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="author-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h3>关于本站</h3>
+            <p>本站是一个基于 TV 动画《BanG Dream! It's MyGO!!!!!》主题的五十音学习网站。</p>
+            <p>所有内容（特别是例句）均与作品主题相关，旨在提供更有趣的学习体验。</p>
+            <p>数据来自于：<a href="https://www.bilibili.com/video/BV1zQ4y177HT" style="color: #FB7299;">BV1zQ4y177HT</a></p>
+            <p>这是一个粉丝作品，仅供学习交流使用。</p>
+            <p>电子邮箱：konoshizuka@outlook.jp</p>
+            <p>由 Gemini AI构建。</p>
+            <p>版本：release 1.1</p>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
